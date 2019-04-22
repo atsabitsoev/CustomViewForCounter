@@ -11,8 +11,10 @@ import UIKit
 @IBDesignable
 class CounterView: UIView {
     
+    
     @IBInspectable var count: Int = 5 {
         didSet {
+            checkCount()
             setNeedsDisplay()
         }
     }
@@ -21,8 +23,9 @@ class CounterView: UIView {
             setNeedsDisplay()
         }
     }
-    @IBInspectable var regularInset: CGFloat = 20 {
+    @IBInspectable var regularInset: CGFloat = 10 {
         didSet {
+            print(regularInset)
             setNeedsDisplay()
         }
     }
@@ -107,7 +110,8 @@ class CounterView: UIView {
     
     private func drawArcs(centerPoint: CGPoint) {
         
-        let center = CGPoint(x: centerPoint.x - self.frame.minX, y: centerPoint.y - self.frame.minY)
+        let center = CGPoint(x: centerPoint.x - self.frame.minX,
+                             y: centerPoint.y - self.frame.minY)
         let startAngles: [CGFloat] = [.pi / 12,
                                       .pi / 12 + .pi / 2,
                                       .pi / 12 + .pi,
@@ -127,6 +131,17 @@ class CounterView: UIView {
             arcsPath.lineWidth = radiusOfCircle * 0.75
             additionalColor.setStroke()
             arcsPath.stroke()
+        }
+    }
+    
+    private func checkCount() {
+        let totalWidth = radiusOfCircle + CGFloat(count) * regularInset
+        
+        if totalWidth > self.bounds.width {
+            regularInset -= 1
+            checkCount()
+        } else {
+            return
         }
     }
     
