@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC88AE6B226DB26800E1DA4D /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88AE6A226DB26800E1DA4D /* CounterView.swift */; };
 		ACA61A63226DAC9B00A4B5D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA61A62226DAC9B00A4B5D1 /* AppDelegate.swift */; };
 		ACA61A65226DAC9B00A4B5D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA61A64226DAC9B00A4B5D1 /* ViewController.swift */; };
 		ACA61A68226DAC9B00A4B5D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA61A66226DAC9B00A4B5D1 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC88AE6A226DB26800E1DA4D /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		ACA61A5F226DAC9B00A4B5D1 /* CustomViewForCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomViewForCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA61A62226DAC9B00A4B5D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA61A64226DAC9B00A4B5D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				ACA61A62226DAC9B00A4B5D1 /* AppDelegate.swift */,
 				ACA61A64226DAC9B00A4B5D1 /* ViewController.swift */,
+				AC88AE6A226DB26800E1DA4D /* CounterView.swift */,
 				ACA61A66226DAC9B00A4B5D1 /* Main.storyboard */,
 				ACA61A69226DAC9D00A4B5D1 /* Assets.xcassets */,
 				ACA61A6B226DAC9D00A4B5D1 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				ACA61A65226DAC9B00A4B5D1 /* ViewController.swift in Sources */,
 				ACA61A63226DAC9B00A4B5D1 /* AppDelegate.swift in Sources */,
+				AC88AE6B226DB26800E1DA4D /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
