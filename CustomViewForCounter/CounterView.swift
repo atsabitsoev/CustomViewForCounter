@@ -39,6 +39,9 @@ class CounterView: UIView {
     @IBInspectable var shadowRadius: CGFloat = 4
     
     
+    override func didMoveToSuperview() {
+        self.backgroundColor = .clear
+    }
     
 
     override func draw(_ rect: CGRect) {
